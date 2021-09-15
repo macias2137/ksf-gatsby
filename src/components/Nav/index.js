@@ -33,10 +33,12 @@ const Nav = () => {
           <a
             href=""
             className={
-              showNavbar ? "navbar-item nav-item--white" : "navbar-item"
+              showNavbar
+                ? "navbar-item nav__title nav-item--white"
+                : "navbar-item nav__title"
             }
           >
-            KSF
+            {data.leftPane.text}
           </a>
           <a
             className="navbar-burger"
@@ -52,7 +54,7 @@ const Nav = () => {
         </div>
         <div className="navbar-menu">
           <div className="navbar-end">
-            {data.map((tab) => (
+            {data.rightPane.map((tab) => (
               <a
                 className={
                   showNavbar ? "navbar-item nav-item--white" : "navbar-item"
