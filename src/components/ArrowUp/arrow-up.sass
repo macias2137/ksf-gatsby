@@ -1,0 +1,17 @@
+.arrow-up
+    position: fixed
+    transition: transform 0.7s
+    top: 91%
+    left: 95%
+    animation: pulse 5s infinite
+
+    &:hover
+        transform: scale(1.3)
+
+@keyframes pulse
+    0%
+        opacity: 0.5
+    50%
+        opacity: 1
+    100%
+        opacity: 0.51
