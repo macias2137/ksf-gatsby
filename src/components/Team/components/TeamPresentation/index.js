@@ -3,7 +3,7 @@ import { TeamData } from "../../team-data";
 import TeamMember from "../TeamMember";
 
 const TeamPresentation = ({ className, offsetY }) => {
-  const left = offsetY / 70 - 22;
+  const left = offsetY / 70 - 18;
   return (
     <div
       className={`columns team-presentation is-multiline is-centered is-marginless ${className}`}

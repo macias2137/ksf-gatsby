@@ -1,5 +1,4 @@
 export const PortfolioData = {
-  title: "Portfolio",
   portfolio: [
     {
       name: "System informatyczny ZUS",

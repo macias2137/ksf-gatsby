@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeaderSmall = ({ title, subtitle, background, backgroundRgb, id }) => {
+const HeaderSmall = ({ id, title, subtitle, background, backgroundRgb }) => {
   return (
     <section
       id={id}
@@ -11,11 +11,9 @@ const HeaderSmall = ({ title, subtitle, background, backgroundRgb, id }) => {
         className="header-small__color-cover"
         style={{ backgroundColor: `rgba(${backgroundRgb},0.8)` }}
       >
-        <div className="container header-small__main is-flex is-flex-direction-column is-justify-content-center">
-          <p className={`is-size-2 has-text-weight-bold ${id}__title`}>
-            {title}
-          </p>
-          <p className={`is-size-4 ${id}__subtitle`}>{subtitle}</p>
+        <div className="container header-small__main">
+          <p className="is-size-2 has-text-weight-bold">{title}</p>
+          <p className="is-size-4">{subtitle}</p>
         </div>
       </div>
     </section>

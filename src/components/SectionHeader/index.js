@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 const SectionHeader = ({
   title,
   subtitle,
+  buttonText,
   children,
   height,
   id,
@@ -32,33 +33,31 @@ const SectionHeader = ({
       }}
     >
       <div
-        className={`section-header__color-cover is-flex is-align-items-center is-justify-content-center`}
+        className="section-header__color-cover"
         style={{
           backgroundColor: `rgba(${backgroundRgb}, 0.7)`,
         }}
       >
         <div
-          className="container section-header__text is-flex is-flex-direction-column is-align-items-center is-justify-content-center"
+          className="container section-header__text"
           style={
             textTransformSpeed && {
               transform: `translateY(${offsetY * textTransformSpeed}px`,
             }
           }
         >
-          <p
-            className="section-header__title"
-            style={{ color: `${color}`, fontSize: `${titleSize}` }}
-          >
+          <p className="section-header__title" style={{ color: `${color}` }}>
             {title}
           </p>
-          {subtitle && (
-            <p
-              className="section-header__subtitle"
-              style={{ color: `${color}` }}
-            >
-              {subtitle}
-            </p>
-          )}
+          <p className="section-header__subtitle" style={{ color: `${color}` }}>
+            {subtitle}
+          </p>
+          <a
+            href="#products"
+            className="button section-header__button px-6 is-link"
+          >
+            <b>{buttonText.toUpperCase()}</b>
+          </a>
           {children}
         </div>
       </div>

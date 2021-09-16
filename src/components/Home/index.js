@@ -1,20 +1,15 @@
 import React from "react";
 import SectionHeader from "../SectionHeader";
-import img from "../../images/code-purple.jpg";
+import { HomeData as data } from "./home-data";
 
 const Home = () => {
+  const { id, title, subtitle, buttonText, img } = data;
   return (
     <SectionHeader
-      id="home"
-      title="Zajebiste programy"
-      subtitle={
-        "Jesteśmy firmą spod Gniezna produkującą nowatorskie oprogramowanie dla administracji i wszystkich gałęzi przemysłu"
-      }
-      children={
-        <a href="#products" className="button home__button px-6 is-link">
-          <b>ZOBACZ NASZE PRODUKTY</b>
-        </a>
-      }
+      id={id}
+      title={title}
+      subtitle={subtitle}
+      buttonText={buttonText}
       height="100vh"
       backgroundRgb="20, 30, 61"
       color="white"

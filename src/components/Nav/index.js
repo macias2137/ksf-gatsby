@@ -8,11 +8,7 @@ const Nav = () => {
   useEffect(() => {
     const controlNavbar = () => {
       let currentScrollPos = window.pageYOffset;
-      if (prevScrollPos > currentScrollPos && currentScrollPos < 400) {
-        setShowNavbar(true);
-      } else {
-        setShowNavbar(false);
-      }
+      setShowNavbar(prevScrollPos > currentScrollPos && currentScrollPos < 400);
     };
     window.addEventListener("scroll", controlNavbar);
     return () => {
@@ -31,7 +27,7 @@ const Nav = () => {
       <div className="container">
         <div className="navbar-brand">
           <a
-            href=""
+            href="#home"
             className={
               showNavbar
                 ? "navbar-item nav__title nav-item--white"
@@ -45,7 +41,7 @@ const Nav = () => {
             role="button"
             aria-label="menu"
             aria-expanded="false"
-            href="#home"
+            href=""
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
