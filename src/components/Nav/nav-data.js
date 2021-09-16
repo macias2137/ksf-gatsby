@@ -4,7 +4,7 @@ export const NavData = {
     { tabName: "Home" },
     { tabName: "Services" },
     { tabName: "About Us" },
-    { tabName: "Products" },
+    { tabName: "Portfolio" },
     { tabName: "Testimonials" },
     { tabName: "Contact" },
   ],

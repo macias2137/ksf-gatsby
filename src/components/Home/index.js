@@ -18,7 +18,6 @@ const Home = () => {
       height="100vh"
       backgroundRgb="20, 30, 61"
       color="white"
-      // titleSize="100px"
       img={img}
       textTransformSpeed="0.4"
     />
