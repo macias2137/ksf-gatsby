@@ -4,14 +4,21 @@
     justify-content: center
     align-items: center
 
+    &__image
+        width: 100%
+
+    &__text
+        display: flex
+        flex-direction: column
+
     &__description
-        min-height: 4.5rem
+        min-height: 120px
         display: flex
         justify-content: center
         align-items: flex-start
 
-        @media only screen and (orientation: landscape) and (min-width: 900px) and (min-width: 1100px)
-            height: 130px
+        @include tablet-only
+            min-height: 150px
 
-    &__name, &__text
+    &__name, &__description
         color: $dark-blue

@@ -2,17 +2,30 @@
     background-color: $dark-blue
     color: $white
     display: flex
-    flex-direction: column
     justify-content: center
     align-items: center
 
     &__main
         border: 1px solid $orange
-        min-height: 440px
+
+        @include widescreen-only
+            display: flex
+            align-items: center
+
+        @include fullhd
+            min-height: 460px
+
         @media only screen and (min-width: 540px) and (max-width: 768px)
             min-height: 300px
 
     &__name
         color: $white
+
         @include desktop
             min-height: 72px
+        @include widescreen-only
+            width: 40%
+
+    &__description
+        @include widescreen-only
+            width: 60%
