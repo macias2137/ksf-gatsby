@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <section id="about-us" className="section about-us">
       <div className="container">
-        <p className="title is-1 has-text-centered about-us__title">{title}</p>
+        <p className="title is-1 about-us__title">{title}</p>
         <p className="about-us__text">{text}</p>
       </div>
     </section>

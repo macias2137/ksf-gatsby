@@ -1,6 +1,7 @@
 import React from "react";
 import { TeamData } from "../../team-data";
 import TeamMember from "../TeamMember";
+import GenerateID from "../../../../id-generator";
 
 const TeamPresentation = ({ className, offsetY }) => {
   const left = offsetY / 70 - 18;
@@ -15,6 +16,7 @@ const TeamPresentation = ({ className, offsetY }) => {
     >
       {TeamData.teamMembers.map((member) => (
         <TeamMember
+          key={GenerateID()}
           name={member.name}
           img={member.img}
           description={member.description}

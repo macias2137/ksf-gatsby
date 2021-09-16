@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavData as data } from "./nav-data";
+import GenerateID from "../../id-generator";
 
 const Nav = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -52,6 +53,7 @@ const Nav = () => {
           <div className="navbar-end">
             {data.rightPane.map((tab) => (
               <a
+                key={GenerateID()}
                 className={
                   showNavbar ? "navbar-item nav-item--white" : "navbar-item"
                 }

@@ -10,7 +10,6 @@ const SectionHeader = ({
   img,
   backgroundRgb,
   color,
-  titleSize,
   textTransformSpeed,
 }) => {
   const [offsetY, setOffsetY] = useState(0);

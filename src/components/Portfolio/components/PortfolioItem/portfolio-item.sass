@@ -8,8 +8,11 @@
 
     &__main
         border: 1px solid $orange
-        min-height: 400px
+        min-height: 440px
         @media only screen and (min-width: 540px) and (max-width: 768px)
             min-height: 300px
+
     &__name
         color: $white
+        @include desktop
+            min-height: 72px

@@ -5,6 +5,7 @@ export const FooterData = {
     { text: "Krzyszti Software Playhouse" },
     { text: "Krzysztof Szyda" },
     { text: "600 367 277 / krzysztof@ksf.pl" },
+    //more lines of text can be added, the footer will automatically expand
   ],
   footerRightPane: [
     { icon: faFacebook, link: "https://www.facebook.com/krzysztof.szyda" },

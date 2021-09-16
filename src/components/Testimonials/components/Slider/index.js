@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import SliderTile from "../SliderTile";
 import { TestimonialsData as data } from "../../testimonials-data";
+import GenerateID from "../../../../id-generator";
 
 const responsive = {
   desktop: {
@@ -49,6 +50,7 @@ const Slider = () => {
     >
       {customerStories.map((story) => (
         <SliderTile
+          key={GenerateID()}
           name={story.customerName}
           img={story.customerImg}
           companyName={story.companyName}
