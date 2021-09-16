@@ -4,9 +4,9 @@ import { TeamData as data } from "./team-data";
 
 const Team = () => {
   const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
 
   useEffect(() => {
+    const handleScroll = () => setOffsetY(window.pageYOffset);
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);

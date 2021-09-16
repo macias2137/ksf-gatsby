@@ -13,9 +13,9 @@ const SectionHeader = ({
   textTransformSpeed,
 }) => {
   const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
 
   useEffect(() => {
+    const handleScroll = () => setOffsetY(window.pageYOffset);
     window.innerHeight > 800 && window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);

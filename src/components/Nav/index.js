@@ -4,7 +4,8 @@ import GenerateID from "../../id-generator";
 
 const Nav = () => {
   const [showNavbar, setShowNavbar] = useState(true);
-  let prevScrollPos = window.pageYOffset;
+  const isBrowser = typeof window !== "undefined";
+  let prevScrollPos = isBrowser && window.pageYOffset;
 
   useEffect(() => {
     const controlNavbar = () => {
